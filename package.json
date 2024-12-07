@@ -1,0 +1,16 @@
+{
+  "name": "casamento",
+  "version": "1.0.0",
+  "description": "Com muita alegria, convidamos você para celebrar o amor compartilhar esse momento ùnico em nossa vida.\r Sua presença tornará o nosso dia ainda mais especial!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.7.2"
+  }
+}
