@@ -1,0 +1,147 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilos Gerais */
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAF3F7;
+    color: #4682A9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+/* Container principal */
+.content {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 750px;
+    animation: fadeIn 1s ease-out;
+    text-align: center;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 3.5rem;
+    color: #1A6DA5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilo da mensagem */
+p {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    color: #4682A9;
+}
+
+/* Estilo do destaque */
+.highlight {
+    color: #91C8E4;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Estilo do botão */
+.btn {
+    background-color: #91C8E4;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #A0DBF8;
+}
+
+/* Estilo da imagem */
+.image {
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+/* Interatividade divertida */
+.fun-interaction {
+    margin-top: 30px;
+}
+
+.question {
+    font-size: 1.5rem;
+    color: #1A6DA5;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.count-steps {
+    background-color: #4682A9;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.count-steps:hover {
+    background-color: #1A6DA5;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+}

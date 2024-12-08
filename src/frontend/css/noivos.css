@@ -1,0 +1,69 @@
+/* Página específica dos noivos */
+#sobre-os-noivos {
+    background-color: var(--cor-clara);
+    padding: 40px 0;
+    color: var(--cor-texto);
+}
+
+#sobre-os-noivos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cor-acentuacao);
+    margin-bottom: 20px;
+}
+
+#sobre-os-noivos .conteudo p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#sobre-os-noivos .conteudo p:hover {
+    transform: translateX(10px);
+    color: var(--cor-destaque);
+}
+
+#sobre-os-noivos .noiva, #sobre-os-noivos .noivo {
+    margin-bottom: 40px;
+}
+
+#sobre-os-noivos .noiva h3, #sobre-os-noivos .noivo h3 {
+    color: var(--cor-acentuacao);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#sobre-os-noivos .imagem-principal img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de rodapé */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre-os-noivos h2 {
+        font-size: 2rem;
+    }
+
+    #sobre-os-noivos .conteudo p {
+        font-size: 1rem;
+    }
+
+    #sobre-os-noivos .imagem-principal img {
+        max-width: 100%;
+    }
+}
