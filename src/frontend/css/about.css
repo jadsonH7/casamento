@@ -1,7 +1,10 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Edu AU VIC WA NT Hand", sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,7 +20,11 @@
 }
 
 body {
+    height: 100dvh;
     background-color: var(--color-bg-ligth);
+}
+
+main {
     height: 100dvh;
 }
 
@@ -37,20 +44,4 @@ body {
     width: 10rem;
     object-fit: cover;
     margin-top: -2rem;
-}
-
-.box-logo .title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--color-border-ligth);
-}
-
-#sobre-o-casal {
-    width: 100%;
-    padding: 2rem;
-}
-
-#sobre-o-casal .container {
-    display: flex;
-
 }
