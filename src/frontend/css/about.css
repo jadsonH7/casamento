@@ -24,24 +24,127 @@ body {
     background-color: var(--color-bg-ligth);
 }
 
-main {
-    height: 100dvh;
-}
-
 .box-logo {
     width: 100%;
-    padding: 0 1rem;
-    background-color: var(--color-secundary-ligth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box-logo .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 13rem;
+    margin: auto;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
 }
 
 .logo img {
-    width: 10rem;
+    width: 100%;
     object-fit: cover;
-    margin-top: -2rem;
+}
+
+.box-logo .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 3rem 0 2rem 0;
+    color: var(--color-border-ligth);
+}
+
+#sobre-o-casal {
+    width: 100%;
+}
+
+#sobre-o-casal .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    padding: 0 3rem 2rem 3rem;
+}
+
+.container .subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-font-ligth);
+}
+
+.container .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conteudo .text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+}
+
+.conteudo .img-text {
+    width: 15rem;
+}
+
+.img-text img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem 3rem;
+    background-color: var(--color-primary-ligth);
+}
+
+.rodape .text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--color-border-ligth);
+}
+
+/* Butão de voltar */
+.btn-back{
+    background-color: var(--color-border-ligth);
+    padding: 1.3rem .75rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.btn {
+    border-top: .2rem solid var(--color-bg-ligth);
+    width: 1.5rem;
+    transform: rotate(90deg);
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: .1rem;
+    right: .8rem;
+}
+
+.btn::after {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
 }

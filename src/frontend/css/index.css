@@ -194,7 +194,10 @@ body {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    /* justify-content: space-between; */
 }
 
 .bi-box-arrow-in-right,
@@ -202,15 +205,14 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-font-ligth);
-    transition: .6s ease;
+    transition: .5s;
 }
 
 
 .bi-box-arrow-in-right:hover,
 .bi-person-circle:hover {
-    padding: .1rem .4rem;
-    border-radius: .5rem;
-    font-size: 1.4rem;
+    padding: .2rem .2rem;
+    font-size: 1.75rem;
 }
 
 /* Pagina inicial */
