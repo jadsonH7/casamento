@@ -10,13 +10,6 @@ function toggleMenu() {
         menu.classList.toggle("menu-ativo");
         bgMenu.classList.toggle("bgmenu-ativo");
         btnMenu.classList.toggle("exit-menu");
-
-        // Fechar o menu em telas maiores (>= 992px)
-        if (window.innerWidth >= 992) {
-            menu.classList.remove("menu-ativo");
-            bgMenu.classList.remove("bgmenu-ativo");
-            btnMenu.classList.remove("exit-menu");
-        }
     });
 }
 
@@ -27,11 +20,6 @@ function toggleLogoOnScroll() {
         if (window.scrollY > 0) {
             logo.classList.add("logo-active");
         } else {
-            logo.classList.remove("logo-active");
-        }
-
-        // Remover a classe do logo em telas maiores (>= 992px)
-        if (window.innerWidth >= 992) {
             logo.classList.remove("logo-active");
         }
     });

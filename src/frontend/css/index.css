@@ -197,7 +197,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .bi-box-arrow-in-right,
@@ -1445,25 +1445,553 @@ body {
     }
 }
 
-/* Notebook */
+/* Tablet Grande */
 @media (width >=992px) {
+
+    /* Logotipo */
     .logotipo .logo {
-        overflow: visible;
-        top: 1rem;
-        right: 30rem;
-        position: relative;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        position: static;
     }
 
-    .logotipo .open-menu {
-        border: none;
+    .logo span {
+        width: 11rem;
+        top: -2.5rem;
+        left: 2rem;
+        position: absolute;
     }
 
-    .open-menu::before,
-    .open-menu::after {
+    .logotipo .logo.logo-active {
+        height: auto;
+        padding-top: 0;
+    }
+
+    /* Menu */
+    .open-menu {
         display: none;
     }
 
+    .conteiner-menu {
+        background-color: transparent;
+        position: static;
+        height: auto;
+        visibility: visible;
+    }
+
+    .menu {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        overflow: auto;
+        transition: none;
+    }
+
+    .menu.menu-ativo {
+        height: auto;
+    }
+
+    /* Links */
+    .nav-menu {
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        flex-direction: initial;
+        justify-content: end;
+        align-items: center;
+        padding: 2.5rem 0 0 0;
+    }
+
+    .box-links {
+        width: 62%;
+        display: flex;
+        flex-direction: row;
+        gap: .75rem;
+        align-items: center;
+    }
+
+    .nav-link a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--color-font-ligth);
+        padding: 0 .1rem;
+        transition: .5s;
+    }
+
+    .nav-link a:hover {
+        font-size: 1.4rem;
+    }
+
+    .box-registe {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 10%;
+        gap: .75rem;
+        display: flex;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: initial;
+    }
+
+    .registe {
+        display: none;
+    }
+
+    .bi-box-arrow-in-right,
+    .bi-person-circle {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-font-ligth);
+        padding: 0 .2rem;
+        transition: .5s;
+    }
+
+
+    .bi-box-arrow-in-right:hover,
+    .bi-person-circle:hover {
+        font-size: 1.2rem;
+    }
+
+    /* Home - imagens e text */
+    .box-imgs {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .img-home:nth-child(1) {
+        top: 9rem;
+        left: 3rem;
+        width: 18rem;
+    }
+
+    .img-home:nth-child(2) {
+        height: 0;
+        width: 0;
+    }
+
+    .img-home:nth-child(3) {
+        top: 6rem;
+        right: 10rem;
+        width: 15rem;
+    }
+
+    .img-home:nth-child(4) {
+        top: 38rem;
+        left: 4rem;
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .img-home:nth-child(5) {
+        top: 28rem;
+        right: 2rem;
+        width: 13rem;
+    }
+
+    .img-home:nth-child(6) {
+        top: 23rem;
+        left: 18rem;
+        width: 28rem;
+    }
+
+    .content-home {
+        padding: 0 8rem;
+    }
+
+    .content-home .title-home {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .content-home .text-home {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    }
+
+    /* Cards informativos */
+    .box-card-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: baseline;
+        padding: 4rem 2rem;
+        gap: 2rem;
+    }
+
+    .card-info {
+        width: 25rem;
+        padding: 2rem 3rem;
+    }
+
+    #information .title-info {
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 2rem 0;
+    }
+
+    .card-info .subtitle-info {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .card-info .text-info {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    /* Preferencias imagens - text */
+    #preferencias {
+        padding-bottom: 4rem;
+    }
+
+    .box-pref {
+        height: 100dvh;
+    }
+
+    .img-pref:nth-child(1) {
+        top: 11rem;
+        left: 43rem;
+        width: 17rem;
+    }
+
+    .img-pref:nth-child(2) {
+        top: 5rem;
+        left: 34rem;
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .img-pref:nth-child(3) {
+        top: 5rem;
+        left: 2rem;
+        width: 30rem;
+    }
+
+    .img-pref:nth-child(4) {
+        top: 30rem;
+        right: 9rem;
+        width: 25rem;
+    }
+
+    .pref-circle .img-circle {
+        width: 13rem;
+        height: 13rem;
+        position: absolute;
+        top: -17rem;
+        left: 45rem;
+    }
+
+    .pref {
+        width: 40rem;
+    }
+
+    .title-pref {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .text-pref {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+        padding: 0 2rem 2rem;
+    }
+
+    /* Padrinhos - text - cards */
+    .padrinhos .title {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .padrinhos .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+        padding: 0 8rem 0;
+    }
+
+    .box-padrinho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: flex-start;
+        padding: 0rem 2rem;
+        gap: 2rem;
+    }
+
+    .card-padrinho {
+        width: 25rem;
+    }
+
+    .card-padrinho .title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .card-padrinho .text {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+    }
+
+    /* Festa  */
+    #festa .box-festa {
+        height: 185dvh;
+    }
+
+    .imgs-festa:nth-child(1) {
+        width: 23rem;
+        top: 5rem;
+        left: 21rem;
+    }
+
+    .imgs-festa:nth-child(2) {
+        width: 13rem;
+        height: 13rem;
+        top: 25rem;
+        left: 5rem;
+    }
+
+    .imgs-festa:nth-child(3) {
+        width: 8rem;
+        height: 8rem;
+        top: 38rem;
+        left: 23rem;
+    }
+
+    .imgs-festa:nth-child(4) {
+        width: 25rem;
+        top: 29rem;
+        right: 3rem;
+    }
+
+    .imgs-festa:nth-child(5) {
+        width: 35rem;
+        top: 50rem;
+        left: 5rem;
+    }
+
+    .descricao-festa {
+        width: 40rem;
+        position: relative;
+        left: 20rem;
+        top: -30rem;
+        padding: 2rem 3rem;
+        background-color: var(--color-bg-ligth);
+        border-radius: 3rem;
+        margin-bottom: -26rem;
+    }
+
+    .descricao-festa .title {
+        font-size: 2.75rem;
+        font-weight: 500;
+    }
+
+    .descricao-festa .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    }
+
+    /* Agradecimentos */
+    .box-agradecimento {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .img-agradecimento img {
+        width: 20rem;
+        height: 43rem;
+        border-radius: .5rem;
+    }
+
+    .descricao-agradecimento .title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .descricao-agradecimento .text {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    /* Ajuda dos convidados */
+    .imgs-ajuda {
+        height: 25dvh;
+    }
+
+
+    .box-ajuda .descricao-ajuda {
+        width: 30rem;
+        position: relative;
+        top: -25rem;
+        left: 32rem;
+        background-color: var(--color-bg-ligth);
+        border-radius: 5rem;
+    }
+
+    .box-btn-ajuda {
+        position: absolute;
+        top: 50rem;
+        right: 28rem;
+        gap: 1.5rem;
+        width: 32rem;
+    }
+
+    .box-btn-ajuda .btn-ajuda {
+        padding: .5rem 2rem;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .descricao-ajuda .title {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .descricao-ajuda .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    }
+
+    .ajuda-img .img-circle {
+        width: 8rem;
+        height: 8rem;
+        top: 6rem;
+        left: 25rem;
+    }
+
+    .ajuda-img img {
+        width: 17rem;
+        top: -7rem;
+        left: 4rem;
+        position: relative;
+    }
+
+    .img-ajuda:nth-child(1) {
+        width: 15rem;
+        height: 15rem;
+        top: -16rem;
+        left: 5rem;
+    }
+
+    .img-ajuda:nth-child(2) {
+        width: 25rem;
+        top: -65rem;
+        left: 6rem;
+        z-index: -2;
+    }
+
+    .img-ajuda:nth-child(3) {
+        width: 35rem;
+        top: -27rem;
+        right: 4rem;
+    }
+
+    /* Contato - imgs */
+    #contacts .imgs-contact {
+        height: 120dvh;
+    }
+
+    .img-contact:nth-child(1) {
+        width: 9rem;
+        height: 9rem;
+        top: 5rem;
+        left: 10rem;
+    }
+
+    .img-contact:nth-child(2) {
+        width: 40rem;
+        top: 12rem;
+        right: 10rem;
+    }
+
+    .img-contact:nth-child(3) {
+        width: 15rem;
+        height: 15rem;
+        top: 40rem;
+        right: 6rem;
+    }
+
+    .img-contact:nth-child(4) {
+        width: 9rem;
+        height: 9rem;
+        top: 55rem;
+        left: 15rem;
+    }
+
+    /* Contato - Text */
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .copywhite .box-termos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: baseline;
+        margin-bottom: -2rem;
+        margin-top: 2rem;
+    }
+
+    .title-contact {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .box-tel .title-tel,
+    .title-email,
+    .title-local,
+    .link-contact {
+        font-size: 1.3rem;
+    }
+
+    .area-dev .text-copy,
+    .dev,
+    .github {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .politicas .politica {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .box-area {
+        gap: 2rem;
+    }
+
+    .box-area .title-textarea {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .box-area .text-area {
+        font-size: 1.3rem;
+        font-weight: 500;
+        border-top: 2px solid var(--color-primary-ligth);
+    }
+
+    .box-buttom .btn-submit {
+        padding: .2rem 3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 }
 
-/* Desktop */
+/* Notebook */
 @media (width > 1200px) {}
+
+/* Desktop */
+@media (width > 1900px) {}
