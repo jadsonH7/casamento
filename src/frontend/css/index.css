@@ -163,14 +163,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 3rem 3rem;
+    padding: 2rem 3rem 3rem;
 }
 
 .box-links {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -187,7 +187,8 @@ body {
 }
 
 .nav-link a:hover {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
+    color: var(--color-border-ligth);
 }
 
 .box-registe {
@@ -196,7 +197,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: space-between;
 }
 
@@ -208,11 +209,11 @@ body {
     transition: .5s;
 }
 
-
 .bi-box-arrow-in-right:hover,
 .bi-person-circle:hover {
     padding: .2rem .2rem;
-    font-size: 1.75rem;
+    font-size: 1.1rem;
+    color: var(--color-border-ligth);
 }
 
 /* Pagina inicial */
@@ -223,7 +224,7 @@ body {
 .box-imgs {
     position: relative;
     width: 100%;
-    height: 220vh;
+    height: 220dvh;
 }
 
 .img-home .img {
@@ -335,6 +336,7 @@ body {
     gap: 1.5rem;
     padding: 1.5rem 2rem;
     text-align: center;
+    border-radius: .5rem;
 }
 
 .card-info .subtitle-info {
@@ -685,7 +687,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 3rem;
+    padding: 4rem 1rem;
 }
 
 .descricao-ajuda .title {
@@ -701,6 +703,8 @@ body {
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .imgs-ajuda {
@@ -781,7 +785,7 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-bg-ligth);
     position: absolute;
     top: 5rem;
     left: 3rem;
@@ -795,7 +799,7 @@ body {
 }
 
 .img-contact:nth-child(3) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-bg-ligth);
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -809,7 +813,7 @@ body {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-bg-ligth);
     position: absolute;
     top: 42rem;
     right: 6rem;
@@ -943,7 +947,6 @@ body {
 
 /* Tablet */
 @media (width >=768px) {
-
     /* Logotipo    */
     .logo span {
         width: 15rem;
@@ -1019,7 +1022,7 @@ body {
 
     /* Home - imagens e text */
     .box-imgs {
-        height: 117vh;
+        height: 117dvh;
     }
 
     .img-home:nth-child(1) {
@@ -1042,8 +1045,8 @@ body {
     .img-home:nth-child(4) {
         top: 38rem;
         left: 4rem;
-        height: 9rem;
-        width: 9rem;
+        height: 10rem;
+        width: 10rem;
     }
 
     .img-home:nth-child(5) {
@@ -1056,6 +1059,7 @@ body {
         top: 45rem;
         left: 10rem;
         width: 30rem;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .content-home .title-home {
@@ -1075,9 +1079,9 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        align-items: baseline;
+        align-items: normal;
         padding: 4rem 2rem;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .card-info {
@@ -1116,10 +1120,11 @@ body {
     }
 
     .img-pref:nth-child(2) {
-        top: 6rem;
+        top: 5rem;
         left: 17rem;
-        height: 8rem;
-        width: 8rem;
+        height: 10rem;
+        width: 10rem;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .img-pref:nth-child(3) {
@@ -1132,6 +1137,7 @@ body {
         top: 45rem;
         right: 2rem;
         width: 25rem;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .pref-circle .img-circle {
@@ -1215,10 +1221,11 @@ body {
     }
 
     .imgs-festa:nth-child(3) {
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
         top: 45rem;
         left: 10rem;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .imgs-festa:nth-child(4) {
@@ -1281,10 +1288,11 @@ body {
 
     /* Ajuda dos convidados */
     .ajuda-img .img-circle {
-        width: 8rem;
-        height: 8rem;
-        top: 5rem;
-        left: 16rem;
+        width: 10rem;
+        height: 10rem;
+        top: 4rem;
+        left: 15rem;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .imgs-ajuda {
@@ -1335,7 +1343,7 @@ body {
     .img-ajuda:nth-child(1) {
         width: 10rem;
         height: 10rem;
-        top: -35rem;
+        top: -37rem;
         left: 2rem;
     }
 
@@ -1344,6 +1352,7 @@ body {
         top: -65rem;
         left: 2rem;
         z-index: -2;
+        border: 2rem solid var(--color-primary-ligth);
     }
 
     .img-ajuda:nth-child(3) {
@@ -1362,6 +1371,7 @@ body {
         height: 9rem;
         top: 4rem;
         left: 8rem;
+        border: 2rem solid var(--color-bg-ligth);
     }
 
     .img-contact:nth-child(2) {
@@ -1375,13 +1385,15 @@ body {
         height: 15rem;
         top: 37rem;
         right: 4rem;
+        background-color: var(--color-bg-ligth);
     }
 
     .img-contact:nth-child(4) {
-        width: 9rem;
-        height: 9rem;
+        width: 10rem;
+        height: 10rem;
         top: 55rem;
         left: 15rem;
+        border: 2rem solid var(--color-bg-ligth);
     }
 
     /* Contato - Text */
@@ -1446,7 +1458,7 @@ body {
 }
 
 /* Tablet Grande */
-@media (width >=992px) {
+@media (width >= 992px) {
 
     /* Logotipo */
     .logotipo .logo {
@@ -1520,7 +1532,8 @@ body {
     }
 
     .nav-link a:hover {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        color: var(--color-border-ligth);
     }
 
     .box-registe {
@@ -1551,14 +1564,15 @@ body {
 
     .bi-box-arrow-in-right:hover,
     .bi-person-circle:hover {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        color: var(--color-border-ligth);
     }
 
     /* Home - imagens e text */
     .box-imgs {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
     }
 
     .img-home:nth-child(1) {
@@ -1991,7 +2005,517 @@ body {
 }
 
 /* Notebook */
-@media (width > 1200px) {}
+@media (width >= 1200px) {
+        /* Logotipo */
+        .logo span {
+            width: 13rem;
+            top: -2.5rem;
+            left: 2rem;
+            position: absolute;
+        }
+
+        /* Links */
+        .nav-menu {
+            padding-top: 3rem;
+        }
+    
+        .box-links {
+            width: 65%;
+            display: flex;
+            flex-direction: row;
+            gap: .5rem;
+            align-items: center;
+        }
+    
+        .nav-link a {
+            font-size: 1.75rem;
+            font-weight: 500;
+            padding: 0 .2rem;
+            transition: .5s;
+        }
+    
+        .nav-link a:hover {
+            font-size: 1.4rem;
+            color: var(--color-border-ligth);
+        }
+    
+        .box-registe {
+            width: 10%;
+        }
+
+        .bi-box-arrow-in-right,
+        .bi-person-circle {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--color-font-ligth);
+            padding: 0 .2rem;
+        }
+    
+        .bi-box-arrow-in-right:hover,
+        .bi-person-circle:hover {
+            font-size: 1.3rem;
+            color: var(--color-border-ligth);
+        }
+    
+        /* Home - imagens e text */
+        .box-imgs {
+            position: relative;
+            width: 100%;
+            height: 105dvh;
+        }
+    
+        .img-home:nth-child(1) {
+            top: 9rem;
+            left: 4rem;
+            width: 20rem;
+        }
+    
+        .img-home:nth-child(2) {
+            height: 0;
+            width: 0;
+        }
+    
+        .img-home:nth-child(3) {
+            top: 6rem;
+            right: 8rem;
+            width: 17rem;
+        }
+    
+        .img-home:nth-child(4) {
+            top: 38rem;
+            left: 4rem;
+            height: 10rem;
+            width: 10rem;
+        }
+    
+        .img-home:nth-child(5) {
+            top: 30rem;
+            right: 4rem;
+            width: 15rem;
+        }
+    
+        .img-home:nth-child(6) {
+            top: 18rem;
+            left: 25rem;
+            width: 30rem;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .content-home {
+            padding: 3rem 10rem;
+        }
+    
+        .content-home .title-home {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    
+        .content-home .text-home {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 3.5rem;
+        }
+    
+        /* Cards informativos */
+        .box-card-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: normal;
+            padding: 4rem 3rem;
+            gap: 2rem;
+        }
+    
+        .card-info {
+            width: 23rem;
+            padding: 2rem 2rem;
+            border-radius: .5rem;
+        }
+    
+        #information .title-info {
+            font-size: 3rem;
+            font-weight: 500;
+            padding: 2rem 0;
+        }
+    
+        .card-info .subtitle-info {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    
+        .card-info .text-info {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        /* Preferencias imagens - text */
+        #preferencias {
+            padding-bottom: 15rem;
+        }
+    
+        .box-pref {
+            height: 100dvh;
+        }
+    
+        .img-pref:nth-child(1) {
+            top: 10rem;
+            left: 56rem;
+            width: 20rem;
+        }
+    
+        .img-pref:nth-child(2) {
+            top: 5rem;
+            left: 40rem;
+            height: 10rem;
+            width: 10rem;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .img-pref:nth-child(3) {
+            top: 8rem;
+            left: 4rem;
+            width: 35rem;
+        }
+    
+        .img-pref:nth-child(4) {
+            top: 35rem;
+            right: 7rem;
+            width: 30rem;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .pref-circle .img-circle {
+            width: 15rem;
+            height: 15rem;
+            position: absolute;
+            top: -7rem;
+            left: 30rem;
+        }
+    
+        .pref {
+            width: 40rem;
+        }
+    
+        .title-pref {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    
+        .text-pref {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 3.5rem;
+            padding: 0 2rem 2rem;
+        }
+    
+        /* Padrinhos - text - cards */
+        .padrinhos .title {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    
+        .padrinhos .text {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 3.5rem;
+            padding: 0 8rem 0;
+        }
+    
+        .box-padrinho {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: normal;
+            padding: 0rem 2rem;
+            gap: 2rem;
+        }
+    
+        .card-padrinho {
+            width: 23rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            gap: 2rem;
+        }
+    
+        .card-padrinho .title {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    
+        .card-padrinho .text {
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+    
+        /* Festa  */
+        #festa .box-festa {
+            height: 180dvh;
+        }
+    
+        .imgs-festa:nth-child(1) {
+            width: 23rem;
+            top: 5rem;
+            left: 25rem;
+        }
+    
+        .imgs-festa:nth-child(2) {
+            width: 15rem;
+            height: 15rem;
+            top: 25rem;
+            left: 5rem;
+        }
+    
+        .imgs-festa:nth-child(3) {
+            width: 10rem;
+            height: 10rem;
+            top: 38rem;
+            left: 30rem;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .imgs-festa:nth-child(4) {
+            width: 27rem;
+            top: 25rem;
+            right: 3rem;
+        }
+    
+        .imgs-festa:nth-child(5) {
+            width: 40rem;
+            top: 53rem;
+            left: 4rem;
+        }
+    
+        .descricao-festa {
+            width: 38rem;
+            left: 40rem;
+            top: -35rem;
+            border-radius: 1rem;
+            margin-bottom: -30rem;
+        }
+    
+        .descricao-festa .title {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    
+        .descricao-festa .text {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 3.5rem;
+        }
+    
+        /* Agradecimentos */
+        .box-agradecimento {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+    
+        .img-agradecimento img {
+            width: 25rem;
+            height: 45rem;
+            border-radius: .5rem;
+        }
+    
+        .descricao-agradecimento .title {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    
+        .descricao-agradecimento .text {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        /* Ajuda dos convidados */
+        .imgs-ajuda {
+            height: 45dvh;
+        }
+    
+    
+        .box-ajuda .descricao-ajuda {
+            width: 36rem;
+            position: relative;
+            top: -25rem;
+            left: 41rem;
+            background-color: var(--color-bg-ligth);
+            border-radius: 5rem;
+        }
+    
+        .box-btn-ajuda {
+            position: absolute;
+            top: 52rem;
+            right: 40rem;
+            gap: 1.5rem;
+            width: 32rem;
+        }
+    
+        .box-btn-ajuda .btn-ajuda {
+            padding: .75rem 2rem;
+            border-radius: 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    
+        .descricao-ajuda .title {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    
+        .descricao-ajuda .text {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 3.5rem;
+        }
+    
+        .ajuda-img .img-circle {
+            width: 10rem;
+            height: 10rem;
+            top: 6rem;
+            left: 32rem;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .ajuda-img img {
+            width: 20rem;
+            top: -7rem;
+            left: 4rem;
+            position: relative;
+        }
+    
+        .img-ajuda:nth-child(1) {
+            width: 15rem;
+            height: 15rem;
+            top: -10rem;
+            left: 5rem;
+        }
+    
+        .img-ajuda:nth-child(2) {
+            width: 30rem;
+            top: -60rem;
+            left: 10rem;
+            z-index: 0;
+            border: 2rem solid var(--color-primary-ligth);
+        }
+    
+        .img-ajuda:nth-child(3) {
+            width: 40rem;
+            top: -23rem;
+            right: 4rem;
+        }
+    
+        /* Contato - imgs */
+        #contacts .imgs-contact {
+            height: 135dvh;
+        }
+    
+        .img-contact:nth-child(1) {
+            width: 11rem;
+            height: 11rem;
+            top: 5rem;
+            left: 15rem;
+            border: 2rem solid var(--color-bg-ligth);
+        }
+    
+        .img-contact:nth-child(2) {
+            width: 40rem;
+            top: 10rem;
+            right: 13rem;
+        }
+    
+        .img-contact:nth-child(3) {
+            width: 20rem;
+            height: 20rem;
+            top: 34rem;
+            right: 6rem;
+            background-color: var(--color-bg-ligth);
+        }
+    
+        .img-contact:nth-child(4) {
+            width: 13rem;
+            height: 13rem;
+            top: 50rem;
+            left: 7rem;
+            border: 2.5rem solid var(--color-bg-ligth);
+        }
+    
+        /* Contato - Text */
+        #contact {
+            width: auto;
+            display: flex;
+            flex-direction: initial;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 2rem;
+            background-color: var(--color-border-ligth);
+            padding: 10rem 1rem 4rem;
+            position: relative;
+        }
+    
+        .copywhite .box-termos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: baseline;
+            margin-bottom: -2rem;
+            margin-top: 2rem;
+        }
+    
+        .title-contact {
+            font-size: 4rem;
+            font-weight: 700;
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+        }
+
+        .tel-email {
+            width: 100%;
+        }
+
+        .box-tel .title-tel,
+        .title-email,
+        .title-local,
+        .link-contact {
+            font-size: 1.5rem;
+        }
+    
+        .area-dev .text-copy,
+        .dev,
+        .github {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        .politicas .politica {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    
+        .box-area {
+            gap: 2rem;
+        }
+    
+        .box-area .title-textarea {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        .box-area .text-area {
+            font-size: 1.3rem;
+            font-weight: 500;
+            border-top: 2px solid var(--color-primary-ligth);
+        }
+    
+        .box-buttom .btn-submit {
+            padding: .2rem 5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+}
 
 /* Desktop */
 @media (width > 1900px) {}
