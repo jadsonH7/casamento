@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/frontend/css/login-register.css">
+    <script src="/src/frontend/javascript/login-register.js" defer></script>
+    <link rel="shortcut icon" href="icons/login.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Login - Register</title>
+</head>
+
+<body>
+    <main>
+        <section class="conteiner">
+            <section class="auth-form-login">
+                <span class="img-login">
+                    <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
+                </span>
+                <!-- Formulário de Login -->
+                <form id="login-form" class="auth-form" action="/index.html" method="get">
+                    <span class="icon-login">
+                        <i class="bi bi-envelope-heart-fill"></i>
+                        <input type="email" id="login-email" name="email" required placeholder="Insira seu Email">
+                    </span>
+                    <span class="icon-login">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" id="login-password" name="password" required
+                            placeholder="Insira sua Senha">
+                    </span>
+                    <button type="submit" class="btn-submit">Entrar</button>
+                    <span class="toggle-register">
+                        <a href="" class="btn-register">Não tem uma conta? Cadastre-se!</a>
+                    </span>
+                </form>
+                <h2 class="title-login">Login</h2>
+            </section>
+            <section class="auth-form-register">
+                <!-- Formulário de Cadastro -->
+                <form id="register-form" class="auth-form" action="/index.html" method="get">
+                    <span class="img-register">
+                        <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
+                    </span>
+                    <span class="icon-register">
+                        <i class="bi bi-person-circle"></i>
+                        <input type="text" id="register-name" name="name" required
+                            placeholder="Digite seu nome completo">
+                    </span>
+                    <span class="icon-register">
+                        <i class="bi bi-envelope-heart-fill"></i>
+                        <input type="email" id="register-email" name="email" required placeholder="Digite seu Email">
+                    </span>
+                    <span class="icon-register">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" id="register-password" name="password" required
+                            placeholder="Digite sua senha">
+                    </span>
+                    <span class="icon-register">
+                        <i class="bi bi-unlock-fill"></i>
+                        <input type="password" id="register-pw-confirmation" name="password" required
+                            placeholder="Confirme sua senha">
+                    </span>
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                    <span class="toggle-login">
+                        <a href="" class="btn-login">Já tem uma conta? Acessar</a>
+                    </span>
+                </form>
+                <h2 class="title-register">Cadastro</h2>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

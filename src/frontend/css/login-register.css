@@ -7,4 +7,203 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Edu AU VIC WA NT Hand", sans-serif;
+    text-decoration: none;
+}
+
+/* Theme Ligth */
+:root {
+    --color-bg-ligth: #eaf3f7;
+    --color-primary-ligth: #91c8e4;
+    --color-secundary-ligth: #a0dbf8;
+    --color-font-ligth: #4682a9;
+    --color-border-ligth: #1a6da5;
+    --color-erro-ligth: #cf2121;
+    --color-seccess-ligth: #42cf1f;
+}
+
+/* Theme Dark */
+:root {
+    --color-bg-dark: #4682a9;
+    --color-primary-dark: #749bc2;
+    --color-secundary-dark: #91c8e4;
+    --color-font-dark: #f6f4eb;
+    --color-border-dark: #ebf3f6;
+    --color-erro-dark: #b11b1b;
+    --color-seccess-dark: #36a01b;
+}
+
+.conteiner {
+    width: 100%;
+    position: relative;
+}
+
+.img-login {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+}
+
+.img-login img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Icones */
+.icon-login {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 2px solid var(--color-border-ligth);
+    padding: .5rem;
+}
+
+.icon-login i {
+    color: var(--color-border-ligth);
+}
+
+/* Formulario Login */
+.auth-form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-ligth);
+    padding-bottom: 35%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 10rem 0 5rem 0;
+    width: 15rem;
+}
+
+#login-form input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: var(--color-border-ligth);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Botão */
+#login-form .btn-submit {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-secundary-ligth);
+    width: 100%;
+    padding: .5rem 0;
+    color: var(--color-border-ligth);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin: 2rem 0 .5rem 0;
+    cursor: pointer;
+}
+
+/* Link register */
+.toggle-register {
+    width: 100%;
+}
+
+.toggle-register .btn-register {
+    color: var(--color-border-ligth);
+    font-weight: 500;
+}
+
+.title-login {
+    color: var(--color-border-ligth);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+/* Formulario Cadastro */
+.auth-form-register {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-ligth);
+    flex-direction: column;
+    padding-bottom: 15%;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 10rem 0 3rem 0;
+    width: 15rem;
+}
+
+#register-form input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: var(--color-border-ligth);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.img-register {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+}
+
+.img-register img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Icones */
+.icon-register {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 2px solid var(--color-border-ligth);
+    padding: .5rem;
+}
+
+.icon-register i {
+    color: var(--color-border-ligth);
+}
+
+/* Botão */
+#register-form .btn-submit {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-secundary-ligth);
+    width: 100%;
+    padding: .5rem 0;
+    color: var(--color-border-ligth);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin: 2rem 0 .5rem 0;
+    cursor: pointer;
+}
+
+/* Link register */
+.toggle-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-login .btn-login {
+    color: var(--color-border-ligth);
+    font-weight: 500;
+}
+
+.title-register {
+    color: var(--color-border-ligth);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
 }
