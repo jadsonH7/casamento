@@ -2066,43 +2066,38 @@ body {
     
         .img-home:nth-child(1) {
             top: 9rem;
-            left: 4rem;
+            left: 4%;
             width: 20rem;
-        }
-    
-        .img-home:nth-child(2) {
-            height: 0;
-            width: 0;
         }
     
         .img-home:nth-child(3) {
             top: 6rem;
-            right: 8rem;
+            right: 10%;
             width: 17rem;
         }
     
         .img-home:nth-child(4) {
             top: 38rem;
-            left: 4rem;
+            left: 5%;
             height: 10rem;
             width: 10rem;
         }
     
         .img-home:nth-child(5) {
             top: 30rem;
-            right: 4rem;
+            right: 4%;
             width: 15rem;
         }
     
         .img-home:nth-child(6) {
             top: 18rem;
-            left: 25rem;
-            width: 30rem;
+            left: 27%;
+            width: 45%;
             border: 2rem solid var(--color-primary-ligth);
         }
     
         .content-home {
-            padding: 3rem 10rem;
+            width: 80rem;
         }
     
         .content-home .title-home {
@@ -2122,8 +2117,9 @@ body {
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
             align-items: normal;
-            padding: 4rem 3rem;
+            padding: 4rem 1rem;
             gap: 2rem;
+            width: 100%;
         }
     
         .card-info {
@@ -2155,17 +2151,18 @@ body {
     
         .box-pref {
             height: 100dvh;
+            width: 100%;
         }
     
         .img-pref:nth-child(1) {
-            top: 10rem;
-            left: 56rem;
+            top: 23rem;
+            left: 65%;
             width: 20rem;
         }
     
         .img-pref:nth-child(2) {
             top: 5rem;
-            left: 40rem;
+            left: 50%;
             height: 10rem;
             width: 10rem;
             border: 2rem solid var(--color-primary-ligth);
@@ -2173,13 +2170,13 @@ body {
     
         .img-pref:nth-child(3) {
             top: 8rem;
-            left: 4rem;
+            left: 5%;
             width: 35rem;
         }
     
         .img-pref:nth-child(4) {
-            top: 35rem;
-            right: 7rem;
+            top: 50rem;
+            right: 7%;
             width: 30rem;
             border: 2rem solid var(--color-primary-ligth);
         }
@@ -2193,7 +2190,7 @@ body {
         }
     
         .pref {
-            width: 40rem;
+            width: 50%;
         }
     
         .title-pref {
@@ -2226,14 +2223,14 @@ body {
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
             align-items: normal;
-            padding: 0rem 2rem;
+            padding: 0rem 1rem;
             gap: 2rem;
         }
     
         .card-padrinho {
             width: 23rem;
-            padding-right: 3rem;
-            padding-left: 3rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
             gap: 2rem;
         }
     
@@ -2251,45 +2248,46 @@ body {
         /* Festa  */
         #festa .box-festa {
             height: 180dvh;
+            width: 100%;
         }
     
         .imgs-festa:nth-child(1) {
-            width: 23rem;
+            width: 25rem;
             top: 5rem;
-            left: 25rem;
+            left: 30%;
         }
     
         .imgs-festa:nth-child(2) {
             width: 15rem;
             height: 15rem;
             top: 25rem;
-            left: 5rem;
+            left: 5%;
         }
     
         .imgs-festa:nth-child(3) {
             width: 10rem;
             height: 10rem;
             top: 38rem;
-            left: 30rem;
+            left: 33%;
             border: 2rem solid var(--color-primary-ligth);
         }
     
         .imgs-festa:nth-child(4) {
-            width: 27rem;
-            top: 25rem;
-            right: 3rem;
+            width: 25rem;
+            top: 30rem;
+            right: 5%;
         }
     
         .imgs-festa:nth-child(5) {
             width: 40rem;
-            top: 53rem;
-            left: 4rem;
+            top: 60rem;
+            left: 5%;
         }
     
         .descricao-festa {
-            width: 38rem;
-            left: 40rem;
-            top: -35rem;
+            width: 40rem;
+            left: 45%;
+            top: -40rem;
             border-radius: 1rem;
             margin-bottom: -30rem;
         }
@@ -2314,7 +2312,7 @@ body {
         }
     
         .img-agradecimento img {
-            width: 25rem;
+            width: 22rem;
             height: 45rem;
             border-radius: .5rem;
         }
@@ -2336,18 +2334,18 @@ body {
     
     
         .box-ajuda .descricao-ajuda {
-            width: 36rem;
+            width: 35rem;
             position: relative;
             top: -25rem;
-            left: 41rem;
+            left: 50%;
             background-color: var(--color-bg-ligth);
             border-radius: 5rem;
         }
     
         .box-btn-ajuda {
             position: absolute;
-            top: 52rem;
-            right: 40rem;
+            top: 50rem;
+            right: 2rem;
             gap: 1.5rem;
             width: 32rem;
         }
@@ -2375,14 +2373,14 @@ body {
             width: 10rem;
             height: 10rem;
             top: 6rem;
-            left: 32rem;
+            left: 40%;
             border: 2rem solid var(--color-primary-ligth);
         }
     
         .ajuda-img img {
             width: 20rem;
             top: -7rem;
-            left: 4rem;
+            left: 4%;
             position: relative;
         }
     
@@ -2390,21 +2388,21 @@ body {
             width: 15rem;
             height: 15rem;
             top: -10rem;
-            left: 5rem;
+            left: 10%;
         }
     
         .img-ajuda:nth-child(2) {
             width: 30rem;
-            top: -60rem;
-            left: 10rem;
+            top: -55rem;
+            left: 8%;
             z-index: 0;
             border: 2rem solid var(--color-primary-ligth);
         }
     
         .img-ajuda:nth-child(3) {
-            width: 40rem;
-            top: -23rem;
-            right: 4rem;
+            width: 35rem;
+            top: -18rem;
+            right: 5%;
         }
     
         /* Contato - imgs */
@@ -2416,33 +2414,37 @@ body {
             width: 11rem;
             height: 11rem;
             top: 5rem;
-            left: 15rem;
+            left: 15%;
             border: 2rem solid var(--color-bg-ligth);
         }
     
         .img-contact:nth-child(2) {
             width: 40rem;
             top: 10rem;
-            right: 13rem;
+            right: 13%;
         }
     
         .img-contact:nth-child(3) {
             width: 20rem;
             height: 20rem;
             top: 34rem;
-            right: 6rem;
+            right: 6%;
             background-color: var(--color-bg-ligth);
         }
     
         .img-contact:nth-child(4) {
-            width: 13rem;
-            height: 13rem;
-            top: 50rem;
-            left: 7rem;
-            border: 2.5rem solid var(--color-bg-ligth);
+            width: 10rem;
+            height: 10rem;
+            top: 45rem;
+            left: 20%;
+            border: 2rem solid var(--color-bg-ligth);
         }
     
         /* Contato - Text */
+        #contacts {
+            width: 100%;
+        }
+
         #contact {
             width: auto;
             display: flex;
@@ -2518,4 +2520,516 @@ body {
 }
 
 /* Desktop */
-@media (width > 1900px) {}
+@media (width >= 1680px) {
+            /* Logotipo */
+            .logo span {
+                width: 15rem;
+                top: -3.5rem;
+                left: 2rem;
+            }
+    
+            /* Links */
+            .nav-menu {
+                padding-top: 3rem;
+            }
+        
+            .box-links {
+                width: 58%;
+                display: flex;
+                flex-direction: row;
+                gap: 1.5rem;
+                align-items: center;
+            }
+        
+            .nav-link a {
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding: 0 .2rem;
+                transition: .5s;
+            }
+        
+            .nav-link a:hover {
+                font-size: 1.4rem;
+                color: var(--color-border-ligth);
+            }
+        
+            .box-registe {
+                width: 8%;
+            }
+    
+            .bi-box-arrow-in-right,
+            .bi-person-circle {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--color-font-ligth);
+                padding: 0 .2rem;
+            }
+        
+            .bi-box-arrow-in-right:hover,
+            .bi-person-circle:hover {
+                font-size: 1.3rem;
+                color: var(--color-border-ligth);
+            }
+        
+            /* Home - imagens e text */
+            .box-home {
+                width: 100%;
+            }
+
+            .box-imgs {
+                position: relative;
+                width: 100%;
+                height: 125dvh;
+            }
+        
+            .img-home:nth-child(1) {
+                top: 7rem;
+                left: 12%;
+                width: 24rem;
+            }
+        
+            .img-home:nth-child(3) {
+                top: 10rem;
+                right: 5%;
+                width: 26rem;
+            }
+        
+            .img-home:nth-child(4) {
+                top: 45rem;
+                left: 10%;
+                height: 13rem;
+                width: 13rem;
+            }
+        
+            .img-home:nth-child(5) {
+                top: 48rem;
+                right: 7%;
+                width: 20rem;
+            }
+        
+            .img-home:nth-child(6) {
+                top: 28rem;
+                left: 33%;
+                width: 35rem;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .content-home {
+                width: 100rem;
+            }
+        
+            .content-home .title-home {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+        
+            .content-home .text-home {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+            }
+        
+            /* Cards informativos */
+            .box-card-info {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                align-items: normal;
+                padding: 4rem 1rem;
+                gap: 2rem;
+                width: 100%;
+            }
+        
+            .card-info {
+                width: 28rem;
+                padding: 2rem 2rem;
+                border-radius: .5rem;
+            }
+        
+            #information .title-info {
+                font-size: 3rem;
+                font-weight: 500;
+                padding: 2rem 0;
+            }
+        
+            .card-info .subtitle-info {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        
+            .card-info .text-info {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        
+            /* Preferencias imagens - text */
+            #preferencias {
+                padding-bottom: 15rem;
+            }
+        
+            .box-pref {
+                height: 100dvh;
+            }
+        
+            .img-pref:nth-child(1) {
+                top: 15rem;
+                left: 56%;
+                width: 20rem;
+            }
+        
+            .img-pref:nth-child(2) {
+                top: 5rem;
+                left: 40%;
+                height: 10rem;
+                width: 10rem;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .img-pref:nth-child(3) {
+                top: 10rem;
+                left: 4%;
+                width: 35rem;
+            }
+        
+            .img-pref:nth-child(4) {
+                top: 45rem;
+                right: 10%;
+                width: 30rem;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .pref-circle .img-circle {
+                width: 15rem;
+                height: 15rem;
+                position: absolute;
+                top: -7rem;
+                left: 45rem;
+            }
+        
+            .pref {
+                width: 45rem;
+            }
+        
+            .title-pref {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+        
+            .text-pref {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+                padding: 0 2rem 2rem;
+            }
+        
+            /* Padrinhos - text - cards */
+            .padrinhos .title {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+        
+            .padrinhos .text {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+                padding: 0 8rem 0;
+            }
+        
+            .box-padrinho {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                align-items: normal;
+                padding: 0rem 2rem;
+                gap: 2rem;
+            }
+
+            .card-padrinho .img-padrinho img {
+                width: 20rem;
+            }
+        
+            .card-padrinho {
+                width: 28rem;
+                padding-right: 2.5rem;
+                padding-left: 2.5rem;
+                gap: 2rem;
+            }
+        
+            .card-padrinho .title {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        
+            .card-padrinho .text {
+                font-size: 1.3rem;
+                font-weight: 500;
+                line-height: 2.5rem;
+            }
+        
+            /* Festa  */
+            #festa .box-festa {
+                height: 180dvh;
+            }
+        
+            .imgs-festa:nth-child(1) {
+                width: 25rem;
+                top: 5rem;
+                left: 35%;
+            }
+        
+            .imgs-festa:nth-child(2) {
+                width: 15rem;
+                height: 15rem;
+                top: 25rem;
+                left: 10%;
+            }
+        
+            .imgs-festa:nth-child(3) {
+                width: 10rem;
+                height: 10rem;
+                top: 40rem;
+                left: 35%;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .imgs-festa:nth-child(4) {
+                width: 30rem;
+                top: 35rem;
+                right: 5%;
+            }
+        
+            .imgs-festa:nth-child(5) {
+                width: 40rem;
+                top: 65rem;
+                left: 10%;
+            }
+        
+            .descricao-festa {
+                width: 45rem;
+                left: 55%;
+                top: -28rem;
+                border-radius: 1rem;
+                margin-bottom: -20rem;
+            }
+        
+            .descricao-festa .title {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+        
+            .descricao-festa .text {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+            }
+        
+            /* Agradecimentos */
+            .box-agradecimento {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 3rem;
+            }
+        
+            .img-agradecimento img {
+                width: 30rem;
+                height: 50rem;
+                border-radius: .5rem;
+            }
+        
+            .descricao-agradecimento .title {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+        
+            .descricao-agradecimento .text {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        
+            /* Ajuda dos convidados */
+            .imgs-ajuda {
+                height: 45dvh;
+            }
+        
+            .box-ajuda .descricao-ajuda {
+                width: 45rem;
+                position: relative;
+                top: -28rem;
+                left: 50%;
+                background-color: var(--color-bg-ligth);
+                border-radius: 5rem;
+            }
+        
+            .box-btn-ajuda {
+                position: absolute;
+                top: 39rem;
+                right: 10%;
+                gap: 1.5rem;
+                width: 32rem;
+            }
+        
+            .box-btn-ajuda .btn-ajuda {
+                padding: .75rem 2rem;
+                border-radius: 1rem;
+                font-size: 1.3rem;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        
+            .descricao-ajuda .title {
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+        
+            .descricao-ajuda .text {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 3.5rem;
+            }
+        
+            .ajuda-img .img-circle {
+                width: 10rem;
+                height: 10rem;
+                top: 6rem;
+                left: 40%;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .ajuda-img img {
+                width: 25rem;
+                top: -7rem;
+                left: 5%;
+                position: relative;
+            }
+        
+            .img-ajuda:nth-child(1) {
+                width: 15rem;
+                height: 15rem;
+                top: -5rem;
+                left: 15%;
+            }
+        
+            .img-ajuda:nth-child(2) {
+                width: 30rem;
+                top: -46rem;
+                left: 10%;
+                z-index: 0;
+                border: 2rem solid var(--color-primary-ligth);
+            }
+        
+            .img-ajuda:nth-child(3) {
+                width: 40rem;
+                top: -20rem;
+                right: 10%;
+            }
+        
+            /* Contato - imgs */
+            #contacts .imgs-contact {
+                height: 135dvh;
+            }
+        
+            .img-contact:nth-child(1) {
+                width: 11rem;
+                height: 11rem;
+                top: 5rem;
+                left: 25%;
+                border: 2rem solid var(--color-bg-ligth);
+            }
+        
+            .img-contact:nth-child(2) {
+                width: 35rem;
+                top: 10rem;
+                right: 15%;
+            }
+        
+            .img-contact:nth-child(3) {
+                width: 20rem;
+                height: 20rem;
+                top: 34rem;
+                right: 8%;
+                background-color: var(--color-bg-ligth);
+            }
+        
+            .img-contact:nth-child(4) {
+                width: 13rem;
+                height: 13rem;
+                top: 50rem;
+                left: 10%;
+                border: 2.5rem solid var(--color-bg-ligth);
+            }
+        
+            /* Contato - Text */
+            #contact {
+                width: auto;
+                display: flex;
+                flex-direction: initial;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 2rem;
+                background-color: var(--color-border-ligth);
+                padding: 10rem 1rem 4rem;
+                position: relative;
+            }
+        
+            .copywhite .box-termos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: baseline;
+                margin-bottom: -2rem;
+                margin-top: 2rem;
+            }
+        
+            .title-contact {
+                font-size: 4rem;
+                font-weight: 700;
+                position: absolute;
+                top: 2rem;
+                left: 3rem;
+            }
+    
+            .tel-email {
+                width: 100%;
+            }
+    
+            .box-tel .title-tel,
+            .title-email,
+            .title-local,
+            .link-contact {
+                font-size: 1.5rem;
+            }
+        
+            .area-dev .text-copy,
+            .dev,
+            .github {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        
+            .politicas .politica {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        
+            .box-area {
+                gap: 2rem;
+            }
+        
+            .box-area .title-textarea {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        
+            .box-area .text-area {
+                font-size: 1.3rem;
+                font-weight: 500;
+                border-top: 2px solid var(--color-primary-ligth);
+            }
+        
+            .box-buttom .btn-submit {
+                padding: .2rem 5rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+}

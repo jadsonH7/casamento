@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/frontend/css/login-register.css">
     <script src="../src/frontend/javascript/login-register.js" defer></script>
+    <link rel="shortcut icon" href="icons/login.ico" type="image/x-icon">
     <title>Login - Register</title>
 </head>
+
 <body>
-    <header>
-        <h1>Login e Register</h1>
-    </header>
     <main>
+        <section class="auth-form-container">
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth-form" action="../index.html" method="get">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required placeholder="Digite seu email">
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Digite sua senha">
+                </div>
+                <button type="submit">Entrar</button>
+                <p class="toggle-link" onclick="toggleForm()">Não tem uma conta? Cadastre-se!</p>
+            </form>
+        </section>
+        <section>
+            <!-- Formulário de Cadastro -->
+            <form id="register-form" class="auth-form" action="../index.html" method="get" style="display: none;">
+                <h2>Cadastro</h2>
+                <div class="input-group">
+                    <label for="register-name">Nome Completo</label>
+                    <input type="text" id="register-name" name="name" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="email" required placeholder="Digite seu email">
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Senha</label>
+                    <input type="password" id="register-password" name="password" required
+                        placeholder="Digite sua senha">
+                </div>
+                <button type="submit">Cadastrar</button>
+                <p class="toggle-link" onclick="toggleForm()">Já tem uma conta? Faça login!</p>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Página de Login/Cadastro - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
