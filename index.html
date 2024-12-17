@@ -19,14 +19,14 @@
                     <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
                 </span>
                 <!-- Formulário de Login -->
-                <form id="login-form" class="auth-form" action="/public/master.html" method="get">
+                <form id="login-form" class="auth-form" action="/public/master.html" method="POST">
                     <span class="icon-login">
                         <i class="bi bi-envelope-heart-fill"></i>
-                        <input type="email" id="login-email" name="email" required placeholder="Insira seu Email">
+                        <input type="email" id="loginEmail" name="loginEmail" required placeholder="Insira seu Email">
                     </span>
                     <span class="icon-login">
                         <i class="bi bi-lock-fill"></i>
-                        <input type="password" id="login-password" name="password" required
+                        <input type="password" id="loginPassword" name="loginPassword" required
                             placeholder="Insira sua Senha">
                     </span>
                     <button type="submit" class="btn-submit">Entrar</button>
@@ -38,27 +38,27 @@
             </section>
             <section class="auth-form-register">
                 <!-- Formulário de Cadastro -->
-                <form id="register-form" class="auth-form" action="/public/master.html" method="get">
+                <form id="register-form" class="auth-form" action="/public/master.html" method="POST">
                     <span class="img-register">
                         <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
                     </span>
                     <span class="icon-register">
                         <i class="bi bi-person-circle"></i>
-                        <input type="text" id="register-name" name="name" required
+                        <input type="text" id="registerName" name="registerName" required
                             placeholder="Digite seu nome completo">
                     </span>
                     <span class="icon-register">
                         <i class="bi bi-envelope-heart-fill"></i>
-                        <input type="email" id="register-email" name="email" required placeholder="Digite seu Email">
+                        <input type="email" id="registerEmail" name="registerEmail" required placeholder="Digite seu Email">
                     </span>
                     <span class="icon-register">
                         <i class="bi bi-lock-fill"></i>
-                        <input type="password" id="register-password" name="password" required
+                        <input type="password" id="registerPassword" name="registerPassword" required
                             placeholder="Digite sua senha">
                     </span>
                     <span class="icon-register">
                         <i class="bi bi-unlock-fill"></i>
-                        <input type="password" id="register-pw-confirmation" name="password" required
+                        <input type="password" id="register-pw-confirmation" name="register-pw-confirmation" required
                             placeholder="Confirme sua senha">
                     </span>
                     <button type="submit" class="btn-submit">Cadastrar</button>

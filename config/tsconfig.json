@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "outDir": "dist",
+        "outDir": "**/*dist",
         "experimentalDecorators": true
     }
 }
