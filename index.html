@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/frontend/css/login-register.css">
-    <script src="/src/frontend/javascript/login-register.js" defer></script>
-    <link rel="shortcut icon" href="icons/login.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/frontend/css/index.css">
+    <script src="/src/frontend/javascript/index.js" defer></script>
+    <link rel="shortcut icon" href="/public/icons/login.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Login - Register</title>
 </head>
@@ -19,7 +19,7 @@
                     <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
                 </span>
                 <!-- Formulário de Login -->
-                <form id="login-form" class="auth-form" action="/public/index.html" method="get">
+                <form id="login-form" class="auth-form" action="/public/master.html" method="get">
                     <span class="icon-login">
                         <i class="bi bi-envelope-heart-fill"></i>
                         <input type="email" id="login-email" name="email" required placeholder="Insira seu Email">
@@ -31,14 +31,14 @@
                     </span>
                     <button type="submit" class="btn-submit">Entrar</button>
                     <span class="toggle-register">
-                        <a href="" class="btn-register">Não tem uma conta? Cadastre-se!</a>
+                        <p class="btn-register">Não tem uma conta? Cadastre-se!</p>
                     </span>
                 </form>
                 <h2 class="title-login">Login</h2>
             </section>
             <section class="auth-form-register">
                 <!-- Formulário de Cadastro -->
-                <form id="register-form" class="auth-form" action="/public/index.html" method="get">
+                <form id="register-form" class="auth-form" action="/public/master.html" method="get">
                     <span class="img-register">
                         <img src="/src/frontend/assets/imgs/logotipo-blur.png" alt="">
                     </span>
@@ -63,7 +63,7 @@
                     </span>
                     <button type="submit" class="btn-submit">Cadastrar</button>
                     <span class="toggle-login">
-                        <a href="" class="btn-login">Já tem uma conta? Acessar</a>
+                        <p class="btn-login">Já tem uma conta? Acessar</p>
                     </span>
                 </form>
                 <h2 class="title-register">Cadastro</h2>
