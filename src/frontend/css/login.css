@@ -71,6 +71,10 @@
     padding-bottom: 35%;
 }
 
+/* .auth-form-login.toggle {
+    display: none;
+} */
+
 #login-form {
     display: flex;
     flex-direction: column;
@@ -105,13 +109,17 @@
 }
 
 /* Link register */
-.toggle-register {
+.toggle-login {
     width: 100%;
 }
 
-.toggle-register .btn-register {
+.toggle-login .btn-login {
     color: var(--color-border-ligth);
     font-weight: 500;
+}
+
+.toggle-login strong {
+    cursor: pointer;
 }
 
 .title-login {
@@ -124,13 +132,17 @@
 /* Formulario Cadastro */
 .auth-form-register {
     width: 100%;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg-ligth);
     flex-direction: column;
     padding-bottom: 15%;
 }
+
+/* .auth-form-register.toggle {
+    display: flex;
+} */
 
 #register-form {
     display: flex;
@@ -189,16 +201,20 @@
 }
 
 /* Link register */
-.toggle-login {
+.toggle-register {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.toggle-login .btn-login {
+.toggle-register .btn-register {
     color: var(--color-border-ligth);
     font-weight: 500;
+}
+
+.toggle-register strong {
+    cursor: pointer;
 }
 
 .title-register {
