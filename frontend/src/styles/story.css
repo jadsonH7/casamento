@@ -1,188 +1,155 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Paleta de cores */
-:root {
-    --cor-clara: #F6F4EB;
-    --cor-destaque: #91C8E4;
-    --cor-secundaria: #749BC2;
-    --cor-acentuacao: #8642A9;
-    --cor-link: #1A6DA5;
-    --cor-texto: #444444;
-}
-
-/* Resetando margens e paddings */
+/* Reset */
 * {
+    font-family: "Edu AU VIC WA NT Hand", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Edu AU VIC WA NT Hand", sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-/* Corpo da página */
+/* Theme Ligth */
+:root {
+    --color-bg-ligth: #eaf3f7;
+    --color-primary-ligth: #91c8e4;
+    --color-secundary-ligth: #a0dbf8;
+    --color-font-ligth: #4682a9;
+    --color-border-ligth: #1a6da5;
+    --color-erro-ligth: #cf2121;
+    --color-seccess-ligth: #42cf1f;
+}
+
+/* Theme Dark */
+:root {
+    --color-bg-dark: #4682a9;
+    --color-primary-dark: #749bc2;
+    --color-secundary-dark: #91c8e4;
+    --color-font-dark: #f6f4eb;
+    --color-border-dark: #ebf3f6;
+    --color-erro-dark: #b11b1b;
+    --color-seccess-dark: #36a01b;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--cor-clara);
-    color: var(--cor-texto);
-    line-height: 1.6;
-    overflow-x: hidden;
+    height: 100dvh;
+    background-color: var(--color-bg-ligth);
 }
 
-/* Cabeçalho */
-header {
-    background-color: var(--cor-acentuacao);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    animation: slideDown 0.5s ease-out;
-}
-
-header .logo img {
-    max-width: 150px;
-    margin-bottom: 10px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Transição de deslizamento */
-@keyframes slideDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Seções */
-section {
-    padding: 40px 0;
-    animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-section h2 {
-    font-size: 2rem;
-    color: var(--cor-acentuacao);
-    text-align: center;
-    margin-bottom: 20px;
-    animation: bounceIn 1s ease;
-}
-
-@keyframes bounceIn {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Estilo do conteúdo */
-.conteudo p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: var(--cor-secundaria);
-    text-align: justify;
-    line-height: 1.8;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.conteudo p:hover {
-    transform: translateX(10px);
-    color: var(--cor-destaque);
-}
-
-.conteudo strong {
-    color: var(--cor-destaque);
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--cor-secundaria);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    animation: fadeInUp 1s ease;
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Imagens */
-.imagem-principal img {
+.logotipo {
     width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .conteudo p {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
+.logotipo .logo {
+    width: 13rem;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
 }
 
-/* Botões interativos */
-button {
-    background-color: var(--cor-link);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logotipo .title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 3rem 0 2rem 0;
+    color: var(--color-border-ligth);
+}
+
+#historia-do-casal {
+    width: 100%;
+}
+
+#historia-do-casal .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    padding: 0 3rem 2rem 3rem;
+}
+
+.container .subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-font-ligth);
+}
+
+.container .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conteudo .text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem 3rem;
+    background-color: var(--color-primary-ligth);
+}
+
+.rodape .text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--color-border-ligth);
+}
+
+/* Butão de voltar */
+.btn-back {
+    background-color: var(--color-border-ligth);
+    padding: 1.3rem .75rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 5px var(--color-bg-ligth);
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transform: rotate(-90deg);
 }
 
-button:hover {
-    background-color: var(--cor-destaque);
+.btn {
+    border-top: .2rem solid var(--color-bg-ligth);
+    width: 1.5rem;
+    transform: rotate(90deg);
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: .1rem;
+    right: .8rem;
+}
+
+.btn::after {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
 }

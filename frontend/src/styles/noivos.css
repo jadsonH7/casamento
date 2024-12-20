@@ -1,73 +1,213 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Página específica dos noivos */
-#sobre-os-noivos {
-    background-color: var(--cor-clara);
-    padding: 40px 0;
-    color: var(--cor-texto);
+/* Reset */
+* {
     font-family: "Edu AU VIC WA NT Hand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-#sobre-os-noivos h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--cor-acentuacao);
-    margin-bottom: 20px;
+/* Theme Ligth */
+:root {
+    --color-bg-ligth: #eaf3f7;
+    --color-primary-ligth: #91c8e4;
+    --color-secundary-ligth: #a0dbf8;
+    --color-font-ligth: #4682a9;
+    --color-border-ligth: #1a6da5;
+    --color-erro-ligth: #cf2121;
+    --color-seccess-ligth: #42cf1f;
 }
 
-#sobre-os-noivos .conteudo p {
-    font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, color 0.3s ease;
+/* Theme Dark */
+:root {
+    --color-bg-dark: #4682a9;
+    --color-primary-dark: #749bc2;
+    --color-secundary-dark: #91c8e4;
+    --color-font-dark: #f6f4eb;
+    --color-border-dark: #ebf3f6;
+    --color-erro-dark: #b11b1b;
+    --color-seccess-dark: #36a01b;
 }
 
-#sobre-os-noivos .conteudo p:hover {
-    transform: translateX(10px);
-    color: var(--cor-destaque);
+body {
+    background-color: var(--color-bg-ligth);
+    height: 100dvh;
 }
 
-#sobre-os-noivos .noiva, #sobre-os-noivos .noivo {
-    margin-bottom: 40px;
-}
-
-#sobre-os-noivos .noiva h3, #sobre-os-noivos .noivo h3 {
-    color: var(--cor-acentuacao);
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#sobre-os-noivos .imagem-principal img {
+.logotipo {
     width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Estilo de rodapé */
-footer {
-    background-color: var(--cor-secundaria);
-    color: white;
+.logotipo .logo {
+    width: 13rem;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logotipo .title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 3rem 0 2rem 0;
+    color: var(--color-border-ligth);
+}
+
+#sobre-os-noivos {
+    width: 100%;
+}
+
+#sobre-os-noivos .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    padding: 0 3rem 2rem 3rem;
+}
+
+.container .subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-font-ligth);
+}
+
+.noiva, .noivo .sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-font-ligth);
+}
+
+.box-img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.imgs img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Imagens Noiva */
+.noiva .imgs:nth-child(1) {
+    width: 10rem;
+    position: relative;
+    left: 50%;
+}
+
+.noiva .imgs:nth-child(2) {
     text-align: center;
-    padding: 20px;
-    font-size: 1.2rem;
+    padding: 2rem 0;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    #sobre-os-noivos h2 {
-        font-size: 2rem;
-    }
+.noiva .imgs:nth-child(3) {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--color-primary-ligth);
+    border-radius: 50%;
+    position: relative;
+    right: 10%;
+}
 
-    #sobre-os-noivos .conteudo p {
-        font-size: 1rem;
-    }
+/* Imagens Noivo */
+.noivo .imgs:nth-child(1) {
+    width: 10rem;
+    position: relative;
+    right: 10%;
+}
 
-    #sobre-os-noivos .imagem-principal img {
-        max-width: 100%;
-    }
+.noivo .imgs:nth-child(2) {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.noivo .imgs:nth-child(3) {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--color-primary-ligth);
+    border-radius: 50%;
+    position: relative;
+    left: 70%;
+}
+
+.container .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conteudo .text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem 3rem;
+    background-color: var(--color-primary-ligth);
+}
+
+.rodape .text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--color-border-ligth);
+}
+
+/* Butão de voltar */
+.btn-back {
+    background-color: var(--color-border-ligth);
+    padding: 1.3rem .75rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 5px var(--color-bg-ligth);
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+
+.btn {
+    border-top: .2rem solid var(--color-bg-ligth);
+    width: 1.5rem;
+    transform: rotate(90deg);
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: .1rem;
+    right: .8rem;
+}
+
+.btn::after {
+    content: "";
+    width: .75rem;
+    height: .2rem;
+    background-color: var(--color-bg-ligth);
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
 }
