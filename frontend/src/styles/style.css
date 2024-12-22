@@ -333,7 +333,7 @@ body {
     width: 19rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 1.5rem 2rem;
     text-align: center;
     border-radius: .5rem;
@@ -748,11 +748,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .box-btn-ajuda .btn-ajuda {
-    padding: .3rem 1rem;
+    padding: .3rem .5rem;
     font-size: 1rem;
     font-weight: 600;
     border: none;
