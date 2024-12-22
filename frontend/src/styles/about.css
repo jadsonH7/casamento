@@ -103,53 +103,82 @@ body {
     align-items: center;
     padding: 3rem 3rem 3rem;
     background-color: var(--color-primary-ligth);
+    gap: 2rem;
 }
 
 .rodape .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
     color: var(--color-border-ligth);
 }
 
 /* Butão de voltar */
-.btn-back {
-    background-color: var(--color-border-ligth);
-    padding: 1.3rem .75rem;
+.button-back {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
     border-radius: 50%;
-    margin-bottom: 3rem;
-    box-shadow: 0px 0px 5px var(--color-bg-ligth);
     cursor: pointer;
-    transform: rotate(-90deg);
-}
-
-.btn {
-    border-top: .2rem solid var(--color-bg-ligth);
-    width: 1.5rem;
-    transform: rotate(90deg);
     position: relative;
-}
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--color-primary-ligth);
+  }
+  
+  /* plus sign */
+  .icon-btn {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-btn .bi-box-arrow-in-left {
+    width: 17px;
+    font-size: 1.5rem;
+    color: var(--color-border-ligth);
+  }
 
-.btn::before {
-    content: "";
-    width: .75rem;
-    height: .2rem;
-    background-color: var(--color-bg-ligth);
-    transform: rotate(45deg);
-    display: block;
+  /* text */
+  .text-btn {
     position: absolute;
-    top: .1rem;
-    right: .8rem;
-}
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--color-border-ligth);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
 
-.btn::after {
-    content: "";
-    width: .75rem;
-    height: .2rem;
-    background-color: var(--color-bg-ligth);
-    transform: rotate(-45deg);
-    display: block;
-    position: absolute;
-    bottom: .3rem;
-    left: 0;
-}
+  /* hover effect on button width */
+  .button-back:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .button-back:hover .icon-btn {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+
+  /* hover effect button's text */
+  .button-back:hover .text-btn {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding: 0 1rem;
+  }
+
+  /* button click effect*/
+  .button-back:active {
+    transform: translate(2px ,2px);
+  }

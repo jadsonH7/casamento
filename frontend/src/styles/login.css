@@ -63,24 +63,21 @@
 /* Formulario Login */
 .auth-form-login {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-ligth);
-    padding-bottom: 35%;
+    padding-bottom: 30%;
 }
-
-/* .auth-form-login.toggle {
-    display: none;
-} */
 
 #login-form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    padding: 10rem 0 5rem 0;
+    padding: 15rem 0 5rem 0;
     width: 15rem;
 }
 
@@ -91,21 +88,29 @@
     color: var(--color-border-ligth);
     font-weight: 500;
     font-size: 1rem;
+    outline: none;
 }
 
 /* Botão */
 #login-form .btn-submit {
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--color-secundary-ligth);
     width: 100%;
-    padding: .5rem 0;
     color: var(--color-border-ligth);
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: .1rem;
-    margin: 2rem 0 .5rem 0;
+    padding: .2rem 0;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: var(--color-primary-ligth);
     cursor: pointer;
+    border: 1px solid var(--color-bg-ligth);
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px var(--color-bg-ligth);
+}
+
+.btn-submit:hover {
+    border: 1px solid white;
+}
+
+.btn-submit:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px var(--color-bg-ligth);
 }
 
 /* Link register */
@@ -113,7 +118,7 @@
     width: 100%;
 }
 
-.toggle-login .btn-login {
+.toggle-login p {
     color: var(--color-border-ligth);
     font-weight: 500;
 }
@@ -132,6 +137,7 @@
 /* Formulario Cadastro */
 .auth-form-register {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,10 +145,6 @@
     flex-direction: column;
     padding-bottom: 15%;
 }
-
-/* .auth-form-register.toggle {
-    display: flex;
-} */
 
 #register-form {
     display: flex;
@@ -160,6 +162,7 @@
     color: var(--color-border-ligth);
     font-weight: 500;
     font-size: 1rem;
+    outline: none;
 }
 
 .img-register {
@@ -187,17 +190,24 @@
 
 /* Botão */
 #register-form .btn-submit {
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--color-secundary-ligth);
     width: 100%;
-    padding: .5rem 0;
     color: var(--color-border-ligth);
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: .1rem;
-    margin: 2rem 0 .5rem 0;
+    padding: .2rem 0;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: var(--color-primary-ligth);
     cursor: pointer;
+    border: 1px solid var(--color-bg-ligth);
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px var(--color-bg-ligth);
+}
+
+.btn-submit:hover {
+    border: 1px solid white;
+}
+
+.btn-submit:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px var(--color-bg-ligth);
 }
 
 /* Link register */
@@ -208,7 +218,7 @@
     align-items: center;
 }
 
-.toggle-register .btn-register {
+.toggle-register p {
     color: var(--color-border-ligth);
     font-weight: 500;
 }
@@ -223,3 +233,191 @@
     font-weight: 500;
     letter-spacing: .2rem;
 }
+
+@media (width >=768px) {
+
+    /* Logo */
+    .img-login,
+    .img-register {
+        width: 14rem;
+        position: absolute;
+        top: -2rem;
+    }
+
+    /* Icon */
+    .icon-login,
+    .icon-register i {
+        font-size: 2rem;
+    }
+
+    /* Formulario Login */
+    .auth-form-login {
+        gap: 4rem;
+        padding-bottom: 20%;
+    }
+
+    #login-form {
+        gap: 5rem;
+        padding: 19rem 0 5rem 0;
+        width: 30rem;
+    }
+
+    #login-form input {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    /* Formulario Register */
+    .auth-form-register {
+        gap: 3rem;
+        padding-bottom: 5%;
+    }
+
+    #register-form {
+        gap: 4rem;
+        padding: 15rem 0 5rem 0;
+        width: 30rem;
+    }
+
+    #register-form input {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    /* Botão Login */
+    #login-form .btn-submit {
+        width: 90%;
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 2rem 0 .5rem 0;
+    }
+
+    /* Botão Register */
+    #register-form .btn-submit {
+        width: 90%;
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 2rem 0 .5rem 0;
+    }
+
+    /* Link register */
+    .toggle-login,
+    .toggle-register p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .title-login,
+    .title-register {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+@media (width >=1200px) {
+
+        /* Logo */
+        .img-login {
+            width: 17rem;
+            position: absolute;
+            top: 0;
+            right: 10%;
+        }
+
+        /* Logo Register */
+        .img-register {
+            width: 17rem;
+            position: absolute;
+            top: -2rem;
+            right: 11%;
+        }
+    
+        /* Icon */
+        .icon-login,
+        .icon-register i {
+            font-size: 2rem;
+        }
+    
+        /* Formulario Login */
+        .auth-form-login {
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 0%;
+        }
+    
+        #login-form {
+            gap: 4rem;
+            padding: 2rem 0 5rem 0;
+            width: 30rem;
+        }
+    
+        #login-form input {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        /* Formulario Register */
+        .auth-form-register {
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 0%;
+        }
+    
+        #register-form {
+            gap: 3rem;
+            padding: 2rem 0 1rem 0;
+            width: 30rem;
+        }
+    
+        #register-form input {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    
+        /* Botão Login */
+        #login-form .btn-submit {
+            width: 90%;
+            padding: .5rem 0;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2rem 0 .5rem 0;
+        }
+    
+        /* Botão Register */
+        #register-form .btn-submit {
+            width: 90%;
+            padding: .5rem 0;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2rem 0 .5rem 0;
+        }
+    
+        /* Link register */
+        .toggle-login,
+        .toggle-register p {
+            font-size: 1.75rem;
+            text-align: center;
+        }
+    
+        .title-login,
+        .title-register {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+}
+
+@media (width >=1680px) {}
