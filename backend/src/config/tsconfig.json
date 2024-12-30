@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "../../dist",
+        "rootDir": "../server",
+        "experimentalDecorators": true
+    },
+    "include": ["../server"]
+}

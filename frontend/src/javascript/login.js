@@ -19,7 +19,6 @@ function toggleLogin() {
         register.style.display = "none";
         if (login.style.display === "none") {
             login.style.display = "flex";
-            login.style.heigth
         }
     });
 };

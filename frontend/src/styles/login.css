@@ -70,6 +70,7 @@
     align-items: center;
     background-color: var(--color-bg-ligth);
     padding-bottom: 30%;
+    transition: 1s;
 }
 
 #login-form {
@@ -144,6 +145,7 @@
     background-color: var(--color-bg-ligth);
     flex-direction: column;
     padding-bottom: 15%;
+    transition: 1s;
 }
 
 #register-form {
